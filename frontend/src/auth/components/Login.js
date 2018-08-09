@@ -30,7 +30,7 @@ class Login extends React.Component {
     auth
       .login(this.props.fields.username, this.props.fields.password)
       .then(() => {
-        this.props.history.push('/admin/posts/');
+        this.props.history.push('/admin/');
       })
       .catch(error => {
         this.setState({

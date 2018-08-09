@@ -134,17 +134,15 @@ class ClientList extends React.Component {
             </DialogTitle>
             <DialogContent>
               <DialogContentText id="alert-dialog-description">
-                Let Google help apps determine location. This means sending
-                anonymous location data to Google, even when no apps are
-                running.
+		      Esta seguro de borrar <b>permanentemente</b> este cliente?
               </DialogContentText>
             </DialogContent>
             <DialogActions>
-              <Button onClick={e => this.handleClose(e)} color="primary">
-                Disagree
+              <Button onClick={e => this.handleClose(e)} variant="contained" color="primary">
+                Cancelar
               </Button>
-              <Button onClick={e => this.deleteC(e)} color="primary" autoFocus>
-                Agree
+              <Button onClick={e => this.deleteC(e)} variant="contained" color="secondary" autoFocus>
+                Aceptar
               </Button>
             </DialogActions>
           </Dialog>

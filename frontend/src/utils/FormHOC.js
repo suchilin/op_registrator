@@ -46,7 +46,6 @@ const FormHOC = PassedComponent => {
       if (target.getAttribute('equalto')) {
         let equalto = target.getAttribute('equalto');
         if (value != this.state.fields[equalto]) {
-	      console.log(name, value, "eaqual",this.state.fields[equalto])
           field_errors[name] = 'Este campo es diferente a ' + equalto;
           this.setState({
             field_errors: field_errors,
