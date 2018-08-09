@@ -32,6 +32,10 @@ primero registramos un usuario, y con el mismo nos logeamos
 
 ### Para logearse con curl:
 
+con el usuario creado:
+
+ejemplo
+
 curl -d "username=jesus&password=supersecret" -X POST http://localhost:8000/api/signin
 
 ### esto regresara el token en un formato paresido a esto:
