@@ -19,7 +19,11 @@ export const deleteClient = id => {
       data: {
         id: id,
       },
-      headers: {Authorization: localStorage.token},
+      headers: {
+        Authorization: localStorage.token,
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
     });
   }
 };
